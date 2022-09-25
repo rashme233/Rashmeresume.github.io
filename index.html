@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <!-- header -->
+ <div id="header">
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Achievements</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  <div class="header-text">
+    <p>Hi I am <span>RASHME</span></p>
+  </div>
+  </div>
+ </div>
+ 
+<!---------about--------->
+ <div id="about">
+  <div id ="container">
+    <div class="row">
+    <div class="about-col-1">
+      <img src="RASHME PIC.png">
+    </div>
+    <div class="about-col-2">
+      <h1 class="sub-title">About Me</h1>
+      <p style="font-size:17px;" class="text-justify" mb-8 leading-relaxed">Welcome to my portfolio I am Rashme. I am a young energetic and hardworking person .I love to read and learn new things .please take your time to explore my portfolio and I hope it is useful for you. </p><br>
+      <b><p style="font-size:17px;" class="text-justify" mb-8 leading-relaxed">My Objective: To expand my learnings,knowledge and skills and to apply them to solve real life problems . </p>
+      <div class="tab-titles">
+        <p class="tab-links active-link"onclick="opentab('skills')">Technical Skills</p>
+        <p class="tab-links"onclick="opentab('education')">Education</p>
+        <p class="tab-links"onclick="opentab('hobbies')">Hobbies</p>
+        <p class="tab-links"onclick="opentab('communication')">Communication Skills</p>
+        <p class="tab-links"onclick="opentab('certificate')">Certificates</p>
+        <p class="tab-links"onclick="opentab('phone')">To Reach Me</p>
+
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li>C Programming(intermediate)</li><li>Python Programming(intermediate)</li>
+          <li>IBM cloud (beginner)</li><li>MYSQL(beginner)</li>
+          
+
+        </ul>
+      </div>
+      <div class="tab-contents" id="education">
+        <ul>
+          <li><span>Class 10</span><br>N.S.N Memorial School, CBSE </li>
+          <li><span> Class 10</span><br>N.S.N Memorial School,CBSE </li>
+          <li><span>B.E Computer ans=d Communication engineering</span><br>Sri Sai Ram Institute of Technology(persuing) </li>
+          </ul>
+      </div>
+      <div class="tab-contents" id="hobbies">
+        <ul>
+          <li>Listening Music</li><li>Reading Books</li>
+          <li>Drawing</li> 
+          </ul>
+      </div>
+      <div class="tab-contents" id="communication">
+        <ul>
+          <li>Hindi</li><li>English</li>
+          <li>Tamil</li> 
+          </ul>
+      </div>
+      <div class="tab-contents" id="certificate">
+        <ul>
+          <li><div class="work__container bd-grid">
+            <a href="https://courses.edx.org/certificates/19357f89ac9145bb8fcb13cf2e56e889" class="work__img">
+                <img src="python.png" alt="">
+            </a>
+            <a href="https://courses.edx.org/certificates/c779926e80614cb6806669735c9de003" class="work__img">
+                <img src="AWS Certificate.png" alt="">
+            </a>
+            <a href="https://courses.edx.org/certificates/0ac636cb37bc4df29a35e6c5603af21e" class="work__img">
+                <img src="ai basics.png" alt="">
+            </a>
+            <a href="https://courses.edx.org/certificates/807db5fc11ff4e309b9f8eec87d5a5cb" class="work__img">
+                <img src="intro to cloud.png" alt="">
+            </a>
+            <a href="https://courses.edx.org/certificates/2868c5666fba490b8b697793bba10305" class="work__img">
+                <img src="cloud computing.png" alt="">
+            </a>
+            <a href="https://courses.edx.org/certificates/9650628631934a80928d852cbac4205b" class="work__img">
+                <img src="develo.clou.png" alt="">
+            </a>
+            <a href="https://courses.edx.org/certificates/c779926e80614cb6806669735c9de003" class="work__img">
+              <img src="datascience intro.png" alt="">
+          </a>
+          <a href="https://courses.edx.org/certificates/5aab3ea625844a3eb4eadf3fabc6be41" class="work__img">
+            <img src="chatbot ai.png" alt="">
+        </a>
+        <a href="https://courses.edx.org/certificates/9f5986f8dcfa489ba3c053630a0f8c56" class="work__img">
+          <img src="data tools.png" alt="">
+      </a>
+      <a class="work__img">
+        <img src="NPTEL.png" alt="">
+      </a>
+      <a class="work__img">
+        <img src="RASHME.M internship certification-1.png" alt="">
+      </a>
+      <a class="work__img">
+        <img src="RASHMEM course completion-1.png" alt="">
+      </a></li>
+          </ul>
+      </div>
+      <div class="tab-contents" id="phone">
+        <ul>
+          <li>Phone:8778004347</li><li>E-Mail:rashme0604@gmail.com</li>
+          <li>LinkedIn:https://www.linkedin.com/in/rashme-m-5b8553227/</li> 
+          </ul>
+      </div>
+     
+          
+          
+
+    </div>
+  </div>
+ 
+
+  </div>
+</section>
+</div>
+ <!-- --------portfolio------------->
+ 
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+
+</body>
+
+</html>
